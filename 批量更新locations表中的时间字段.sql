@@ -1,0 +1,1 @@
+update LOCATIONS set UPDATE_TIME = sysdate

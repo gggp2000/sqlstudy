@@ -1,0 +1,3 @@
+create table locations as
+select rownum as LOCATION_NO, PROVINCE, CITY,COUNTY,AREA_NAME,COMMUNITY,LOCATION
+from (select distinct COMMUNITY, AREA_NAME,COUNTY,city,PROVINCE,LOCATION from RISK_AREA order by PROVINCE)

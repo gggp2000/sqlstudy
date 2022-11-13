@@ -1,0 +1,6 @@
+create view riskarea_view as
+SELECT PUBLIC_DATE,PUBLIC_TIME,RISK_GRADE,PROVINCE,CITY,COUNTY,AREA_NAME,LOCATION
+from RISKAREA r
+left join LOCATIONS l
+on r.LOCATION_NO = l.LOCATION_NO
+order by public_date desc
